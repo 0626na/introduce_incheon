@@ -1,0 +1,721 @@
+.content {
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+}
+
+/* 메뉴 부분 style */
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 150px;
+  padding: 0 60px;
+  background-color: #0f1115;
+  z-index: 10;
+}
+
+.menuCollection {
+  display: flex;
+  justify-content: space-evenly;
+  width: 500px;
+}
+
+.menuCollection a,
+.title_link {
+  text-decoration: none;
+  color: white;
+}
+
+.menu_icon {
+  display: none;
+}
+
+.titleContainer {
+  display: flex;
+  padding-left: 20px;
+  justify-content: space-between;
+}
+
+#title {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+#title_description {
+  font-size: 9px;
+  margin-left: 5px;
+}
+
+/* 소개부문 style */
+.incheon_intro {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("./img/incheonIntro.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.happy_incheon_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.happy_incheon {
+  height: 300px;
+  width: 240px;
+  background-color: transparent;
+  border: 3px white solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: 50px;
+  margin-bottom: 60px;
+}
+
+.happy_incheon_textContainer {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-bottom: 20px;
+
+  font-size: 50px;
+}
+
+.incheon_location {
+  margin-top: 20px;
+  justify-self: flex-end;
+  align-self: flex-start;
+  font-size: 30px;
+}
+
+/* 위치 부문 style */
+.location_description_container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.location_description {
+  width: 500px;
+  font-size: 27px;
+  letter-spacing: 3px;
+  line-height: 35px;
+  text-align: justify;
+}
+
+.area_description {
+  width: 400px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  text-align: justify;
+}
+
+.location_description_subContainer {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.description_title {
+  width: 15%;
+  height: 100%;
+  writing-mode: vertical-lr;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  letter-spacing: 3px;
+}
+
+.title_vertical {
+  padding-bottom: 100px;
+}
+
+.location_imgContainer {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 90%;
+  position: relative;
+}
+
+.location_img1 {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  left: -50%;
+  z-index: 1;
+}
+
+.location_img2 {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  left: -5%;
+  bottom: 8%;
+  z-index: 2;
+}
+
+.location_img3 {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  bottom: 5%;
+  left: -90%;
+  z-index: 3;
+}
+
+.cliamte_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.climate_subContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.climate_description_container {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.climate_description_subContainer {
+  width: 80%;
+  height: 100%;
+  display: flex;
+}
+
+.climate_description {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.climate_subDescription {
+  text-align: justify;
+  width: 330px;
+  letter-spacing: 2px;
+  line-height: 20px;
+}
+
+.climate_title {
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+
+.international_city_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.interCity {
+  width: 600px;
+  height: 500px;
+}
+
+.city_description_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.city_description {
+  width: 400px;
+  letter-spacing: 3px;
+  line-height: 25px;
+  text-align: justify;
+}
+
+.city_description_title {
+  font-size: 30px;
+  margin-bottom: 35px;
+  font-weight: 500;
+}
+
+.city_title {
+  writing-mode: vertical-lr;
+  margin: auto 50px;
+  font-size: 30px;
+  letter-spacing: 3px;
+}
+
+.brand_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.brand_img {
+  width: 600px;
+  height: 500px;
+}
+
+.brand_description_container {
+  height: 70%;
+}
+
+.brand_description {
+  width: 350px;
+  text-align: justify;
+  letter-spacing: 2px;
+  line-height: 30px;
+}
+
+.brand_title {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.brand_subContainer {
+  width: 85%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.initialname_title {
+  writing-mode: vertical-lr;
+}
+
+.initialname_container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.initialname_description_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.initialname_description_subContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.initialname_headline {
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+.initialname_description {
+  width: 500px;
+  text-align: justify;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  line-height: 22px;
+}
+
+.initialname_introbox {
+  width: 250px;
+  height: 300px;
+  border: 1px solid white;
+  display: flex;
+  align-items: flex-end;
+}
+
+.initialname_intro_container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  margin-bottom: 60px;
+}
+
+.initialname_areaname {
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.history_container {
+  display: flex;
+
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.history_description_container {
+  width: 80%;
+  height: 80%;
+  overflow: scroll;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.history_description {
+  width: 100%;
+  height: 80%;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.history_description_content {
+  margin-top: 50px;
+}
+
+.timelines {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.timeline_dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  margin-left: -7px;
+  background-color: white;
+}
+.timeline_line {
+  height: 110px;
+  width: 1px;
+  background-color: white;
+}
+
+.history_description_timelineDot_container {
+  display: flex;
+  align-items: center;
+}
+
+.restaurant_container {
+  width: 100%;
+  height: 100%;
+  margin-top: 150px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cafe_container {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.restaurant_subContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 90%;
+  height: 90%;
+}
+
+.restaurant_gridContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.restaurant_img {
+  width: 100%;
+  height: 100%;
+}
+
+.restaurant_title {
+  display: flex;
+  width: 80%;
+  font-size: 60px;
+  padding-bottom: 30px;
+}
+
+.restaurant_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.restaurant_info:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.restaurant_name {
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+
+.restaurant_address {
+  width: 70%;
+}
+
+.restaurant_info_link {
+  text-decoration: none;
+}
+
+.cafe_container .restaurant_title {
+  padding-top: 200px;
+}
+
+.restaurant_img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.restaurant_songdo {
+  background-image: url(/img/restaurant/restaurant1.png);
+}
+
+.restaurant_damsot {
+  background-image: url(/img/restaurant/restaurant_damsot.png);
+}
+
+.restaurant_fitzeria {
+  background-image: url(/img/restaurant/restaurant_fitzeria.png);
+}
+.restaurant_nlmoc {
+  background-image: url(/img/restaurant/restaurant_nlmoc.png);
+}
+.restaurant_italia {
+  background-image: url(/img/restaurant/restaurant_italia.png);
+}
+
+.restaurant_kyoung {
+  background-image: url(/img/restaurant/restaurant_kyoung.png);
+}
+.restaurant_galbi {
+  background-image: url(/img/restaurant/restaurant_sondogalbi.png);
+}
+
+.restaurant_susi {
+  background-image: url(/img/restaurant/restaurant_susi.png);
+}
+
+.cafe_forest {
+  background-image: url(/img/cafe/forest.png);
+}
+
+.cafe_bada {
+  background-image: url(/img/cafe/badacafe.png);
+}
+
+.cafe_avillage {
+  background-image: url(/img/cafe/avilliage.png);
+}
+.cafe_ora {
+  background-image: url(/img/cafe/cafeora.png);
+}
+
+.tour_container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80%;
+}
+
+.tour_container_first {
+  margin-top: 150px;
+}
+
+.tour_description_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tour_title {
+  width: 20%;
+  height: 100%;
+  writing-mode: vertical-lr;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  letter-spacing: 3px;
+}
+
+.tour_description {
+  padding-top: 30px;
+  width: 70%;
+  letter-spacing: 2px;
+  text-align: justify;
+  line-height: 20px;
+}
+
+.tour_img {
+  width: 80%;
+  height: 60%;
+  background-size: cover;
+}
+
+.tour_centralpark {
+  background-image: url(/img/tour/cetralpark.png);
+}
+
+.tour_masianBeach {
+  background-image: url(/img/tour/masian_beach.png);
+}
+
+.tour_temple {
+  background-image: url(/img/tour/temple.png);
+}
+
+.tour_market {
+  background-image: url(/img/tour/market.png);
+}
+
+@keyframes locationImg {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    transform: translateZ(0);
+  }
+}
+
+@keyframes locationText {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes climateText {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    transform: translateZ(0);
+  }
+}
+
+.location_img1_animation {
+  animation: locationImg 0.5s ease-out;
+}
+.location_img2_animation {
+  animation: locationImg 0.7s ease;
+}
+.location_img3_animation {
+  animation: locationImg 0.9s ease-out;
+}
+
+.location_description_animation {
+  animation: locationText 1s ease;
+}
+
+.area_description_animation {
+  animation: locationText 1.5s ease;
+}
+
+.climate_description_animation {
+  animation: climateText 1s ease-in;
+}
+
+.city_img_animation {
+  animation: climateText 1s ease-in;
+}
+
+.city_title_animation {
+  animation: locationText 1s ease-in;
+}
+
+.city_description_animation {
+  animation: locationImg 1s ease-in;
+}
+
+.brand_container_animation {
+  animation: locationImg 1.5s ease-in;
+}
+
+.cafe_title_animation {
+  animation: climateText 1s ease-out;
+}
+
+.restaurant_container_animation {
+  animation: locationImg 1s ease-out;
+}
+
+.tour_title_animation {
+  animation: locationText 1s ease-in-out;
+}
+
+.tour_img_animation {
+  animation: climateText 1s ease-out;
+}
+
+.tour_description_animation {
+  animation: locationImg 1s ease-out;
+}
+
+@media screen and (max-width: 840px) {
+  .menu {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .menuCollection {
+    align-items: center;
+    width: 100%;
+  }
+  .menuCollection a {
+    padding: 5px;
+  }
+
+  .menu_icon {
+    font-size: 30px;
+  }
+
+  .titleContainer {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+}
