@@ -1,7 +1,20 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
 .content {
   background-color: black;
   height: 100vh;
   width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content:first-child {
+  margin-top: 150px;
 }
 
 /* 메뉴 부분 style */
@@ -108,7 +121,7 @@
 }
 
 .location_description {
-  width: 500px;
+  width: 60%;
   font-size: 27px;
   letter-spacing: 3px;
   line-height: 35px;
@@ -142,14 +155,10 @@
   letter-spacing: 3px;
 }
 
-.title_vertical {
-  padding-bottom: 100px;
-}
-
 .location_imgContainer {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 40%;
   height: 90%;
   position: relative;
 }
@@ -158,7 +167,7 @@
   position: absolute;
   width: 300px;
   height: 300px;
-  left: -50%;
+  right: 90%;
   z-index: 1;
 }
 
@@ -166,8 +175,8 @@
   position: absolute;
   width: 300px;
   height: 300px;
-  left: -5%;
-  bottom: 8%;
+  right: 55%;
+  bottom: 20%;
   z-index: 2;
 }
 
@@ -176,14 +185,18 @@
   width: 300px;
   height: 300px;
   bottom: 5%;
-  left: -90%;
+  right: 10%;
   z-index: 3;
 }
+
+/* 기후관련 style */
 
 .cliamte_container {
   width: 100%;
   height: 100%;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .climate_subContainer {
@@ -196,9 +209,8 @@
 
 .climate_description_container {
   width: 100%;
-  height: 80%;
+  height: 85%;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
@@ -207,6 +219,9 @@
   width: 80%;
   height: 100%;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .climate_description {
@@ -309,6 +324,7 @@
 
 .initialname_container {
   display: flex;
+  align-items: center;
   width: 100%;
   height: 100%;
 }
@@ -325,6 +341,7 @@
   display: flex;
   flex-direction: column;
   margin-top: 50px;
+  width: 50%;
 }
 
 .initialname_headline {
@@ -333,7 +350,7 @@
 }
 
 .initialname_description {
-  width: 500px;
+  width: auto;
   text-align: justify;
   letter-spacing: 2px;
   margin-bottom: 20px;
@@ -362,29 +379,61 @@
 
 .history_container {
   display: flex;
-
+  justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
 }
 
-.history_description_container {
-  width: 80%;
-  height: 80%;
-  overflow: scroll;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.history_gallery_container {
+  width: 79%;
+  height: 90%;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 
-.history_description {
-  width: 100%;
-  height: 80%;
-  background-color: rgba(255, 255, 255, 0.2);
-  display: flex;
-  flex-direction: column;
+.history_picture {
+  background-size: cover;
+  background-position: center;
 }
 
+.history_img1 {
+  background-image: url(/img/history/history.png);
+}
+.history_img2 {
+  background-image: url(/img/history/history2.png);
+}
+.history_img3 {
+  background-image: url(/img/history/history3.png);
+}
+.history_img4 {
+  background-image: url(/img/history/history4.png);
+}
+.history_img5 {
+  background-image: url(/img/history/history5.png);
+}
+.history_img6 {
+  background-image: url(/img/history/history6.png);
+}
+.history_img7 {
+  background-image: url(/img/history/history7.png);
+}
+.history_img8 {
+  background-image: url(/img/history/history8.png);
+}
+.history_img9 {
+  background-image: url(/img/history/history9.png);
+}
+.history_img10 {
+  background-image: url(/img/history/history10.png);
+}
+.history_img11 {
+  background-image: url(/img/history/history11.png);
+}
+.history_img12 {
+  background-image: url(/img/history/history12.png);
+}
 .history_description_content {
   margin-top: 50px;
 }
@@ -437,10 +486,9 @@
 
 .restaurant_subContainer {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   width: 90%;
-  height: 90%;
+  height: 100%;
 }
 
 .restaurant_gridContainer {
@@ -451,6 +499,8 @@
 .restaurant_img {
   width: 100%;
   height: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .restaurant_title {
@@ -546,6 +596,7 @@
 
 .tour_container {
   display: flex;
+  justify-content: center;
   align-items: center;
   width: 100%;
   height: 80%;
@@ -585,9 +636,11 @@
 }
 
 .tour_img {
-  width: 80%;
-  height: 60%;
+  width: 100%;
+  height: 0;
+  padding-top: 30%;
   background-size: cover;
+  background-position: center;
 }
 
 .tour_centralpark {
@@ -694,28 +747,347 @@
   animation: locationImg 1s ease-out;
 }
 
+.history_title_animation {
+  animation: locationImg 1s ease-out;
+}
+.history_introBox_animation {
+  animation: locationText 1s ease-out;
+}
+
+.histroy_description_title_animation {
+  animation: locationImg 1s ease-in;
+}
+
+.history_description_animation {
+  animation: locationImg 2s ease-out;
+}
+.history_description_animation2 {
+  animation: locationImg 3s ease-out;
+}
+
+/* 반응형처리 */
+
+@media screen and (max-width: 1130px) {
+  .home_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  /* 소개 관련 style */
+  .incheon_intro {
+    flex-direction: column;
+  }
+  .happy_incheon {
+    justify-content: center;
+    align-items: center;
+  }
+  .happy_incheon_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .happy_incheon_textContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+  }
+
+  .happy_incheon {
+    width: 80%;
+    height: 60%;
+    margin: 0;
+  }
+  .incheon_location {
+    margin-left: 25px;
+    margin-bottom: 25px;
+  }
+
+  /* 위치관련 style */
+  .home_main .content:nth-child(2) {
+    height: 300vh;
+  }
+  .location_description_container {
+    width: 100%;
+
+    flex-direction: column;
+  }
+  .home_main .description_title {
+    width: 100%;
+    writing-mode: initial;
+    padding: 30px 0;
+  }
+  .location_description_subContainer {
+    align-items: center;
+  }
+
+  .location_description {
+    width: 85%;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .area_description {
+    width: 80%;
+
+    font-size: 18px;
+  }
+  .location_imgContainer {
+    position: static;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+  }
+  .location_img1,
+  .location_img2,
+  .location_img3 {
+    position: static;
+    width: 85%;
+    height: 90%;
+    padding: 10px 0;
+  }
+
+  /* 기후관련 style */
+  .home_main .content:nth-child(3) {
+    height: 130vh;
+  }
+  .cliamte_container {
+    flex-direction: column;
+    width: 100%;
+    height: 70%;
+    align-items: center;
+    justify-content: center;
+  }
+  .climate_subContainer {
+    width: 100%;
+    display: flex;
+  }
+
+  .climate_description_container {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .description_title:nth-child(2) {
+    height: 20px;
+  }
+
+  .climate_description_subContainer {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    padding-top: -50px;
+  }
+
+  .climate_subDescription {
+    width: 85%;
+    height: 100%;
+    padding-bottom: 20px;
+  }
+
+  .climate_description {
+    align-items: center;
+  }
+
+  /* 국제도시 관련 style */
+  .home_main .content:nth-child(4) {
+    height: 140vh;
+  }
+  .international_city_container {
+    flex-direction: column;
+  }
+  .city_title {
+    writing-mode: initial;
+    margin: 20px 0;
+  }
+  .city_description_container {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+  .city_description {
+    width: 80%;
+  }
+  .interCity {
+    width: 80%;
+    height: 70%;
+  }
+
+  /* 브랜드 관련 style */
+  .home_main .content:last-child {
+    height: 160vh;
+  }
+  .brand_container {
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .brand_subContainer {
+    flex-direction: column;
+    padding-bottom: 20%;
+  }
+  .brand_description_container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .brand_description {
+    width: 80%;
+  }
+  .home_main .description_title {
+    font-size: 80px;
+    font-weight: 700;
+    height: auto;
+  }
+  .brand_img {
+    width: 90%;
+    height: 100%;
+  }
+
+  /* tour 페이지 */
+  .tour_main .content {
+    height: 150vh;
+  }
+  .tour_container {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .tour_container .description_title {
+    writing-mode: initial;
+    height: auto;
+    font-size: 40px;
+    width: fit-content;
+    padding-bottom: 30px;
+  }
+
+  .tour_title {
+    writing-mode: initial;
+    width: 90%;
+    font-size: 30px;
+    height: auto;
+    padding-bottom: 30px;
+  }
+  .tour_img {
+    width: 80%;
+    height: 0;
+    padding-top: 50%;
+  }
+  .tour_description_container {
+    height: 80%;
+    justify-content: flex-start;
+    padding-top: 60px;
+  }
+  .tour_description {
+    padding-top: 2%;
+    width: 80%;
+  }
+
+  /* history 페이지 관련 style */
+  .initialname_container {
+    flex-direction: column;
+  }
+
+  .initialname_title {
+    writing-mode: initial;
+  }
+
+  .history_main .description_title {
+    width: 100%;
+    height: auto;
+  }
+
+  .history_container {
+    flex-direction: column;
+  }
+}
+
 @media screen and (max-width: 840px) {
+  /* 메뉴 관련 style */
   .menu {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0;
   }
   .menuCollection {
     align-items: center;
     width: 100%;
   }
   .menuCollection a {
-    padding: 5px;
+    padding: 5px 0;
   }
 
   .menu_icon {
     font-size: 30px;
   }
-
   .titleContainer {
     width: 100%;
     justify-content: center;
     align-items: center;
     padding-bottom: 10px;
+  }
+
+  /* 레스토랑 관련 */
+  .restaurant_main .content {
+    height: 250vh;
+  }
+  .restaurant_subContainer {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
+  .cafe_container .restaurant_subContainer {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    height: 80%;
+  }
+
+  /* history 페이지 관련 style */
+  .history_main .content {
+    height: 150vh;
+  }
+  .initialname_description_container {
+    flex-direction: column;
+  }
+  .initialname_description_subContainer {
+    width: 80%;
+  }
+  .initialname_introbox {
+    width: 75%;
+  }
+  .history_gallery_container {
+    padding-top: 40px;
+  }
+}
+
+/* 레스토랑 페이지 이미지 반응형 처리 */
+@media screen and (max-width: 630px) {
+  .restaurant_container .restaurant_subContainer {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  .restaurant_gridContainer {
+    height: 100%;
+  }
+
+  .initialname_title {
+    font-size: 30px;
+  }
+  .history_gallery_container {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  .tour_title .description_title {
+    font-size: 25px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
