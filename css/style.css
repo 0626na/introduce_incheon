@@ -67,7 +67,7 @@ main {
 /* 소개부문 style */
 .incheon_intro {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("img/incheonIntro.png");
+    url("../img/incheonIntro.png");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
