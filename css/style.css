@@ -414,40 +414,40 @@ main {
 }
 
 .history_img1 {
-  background-image: url(img/history/history.png);
+  background-image: url(..img/history/history.png);
 }
 .history_img2 {
-  background-image: url(img/history/history2.png);
+  background-image: url(..img/history/history2.png);
 }
 .history_img3 {
-  background-image: url(img/history/history3.png);
+  background-image: url(..img/history/history3.png);
 }
 .history_img4 {
-  background-image: url(img/history/history4.png);
+  background-image: url(..img/history/history4.png);
 }
 .history_img5 {
-  background-image: url(img/history/history5.png);
+  background-image: url(..img/history/history5.png);
 }
 .history_img6 {
-  background-image: url(img/history/history6.png);
+  background-image: url(..img/history/history6.png);
 }
 .history_img7 {
-  background-image: url(img/history/history7.png);
+  background-image: url(..img/history/history7.png);
 }
 .history_img8 {
-  background-image: url(img/history/history8.png);
+  background-image: url(..img/history/history8.png);
 }
 .history_img9 {
-  background-image: url(img/history/history9.png);
+  background-image: url(..img/history/history9.png);
 }
 .history_img10 {
-  background-image: url(img/history/history10.png);
+  background-image: url(..img/history/history10.png);
 }
 .history_img11 {
-  background-image: url(img/history/history11.png);
+  background-image: url(..img/history/history11.png);
 }
 .history_img12 {
-  background-image: url(img/history/history12.png);
+  background-image: url(..img/history/history12.png);
 }
 .history_description_content {
   margin-top: 50px;
@@ -566,47 +566,47 @@ main {
 }
 
 .restaurant_songdo {
-  background-image: url(img/restaurant/restaurant1.png);
+  background-image: url(..img/restaurant/restaurant1.png);
 }
 
 .restaurant_damsot {
-  background-image: url(img/restaurant/restaurant_damsot.png);
+  background-image: url(..img/restaurant/restaurant_damsot.png);
 }
 
 .restaurant_fitzeria {
-  background-image: url(img/restaurant/restaurant_fitzeria.png);
+  background-image: url(..img/restaurant/restaurant_fitzeria.png);
 }
 .restaurant_nlmoc {
-  background-image: url(img/restaurant/restaurant_nlmoc.png);
+  background-image: url(..img/restaurant/restaurant_nlmoc.png);
 }
 .restaurant_italia {
   background-image: url(img/restaurant/restaurant_italia.png);
 }
 
 .restaurant_kyoung {
-  background-image: url(img/restaurant/restaurant_kyoung.png);
+  background-image: url(..img/restaurant/restaurant_kyoung.png);
 }
 .restaurant_galbi {
-  background-image: url(img/restaurant/restaurant_sondogalbi.png);
+  background-image: url(..img/restaurant/restaurant_sondogalbi.png);
 }
 
 .restaurant_susi {
-  background-image: url(img/restaurant/restaurant_susi.png);
+  background-image: url(..img/restaurant/restaurant_susi.png);
 }
 
 .cafe_forest {
-  background-image: url(img/cafe/forest.png);
+  background-image: url(..img/cafe/forest.png);
 }
 
 .cafe_bada {
-  background-image: url(img/cafe/badacafe.png);
+  background-image: url(..img/cafe/badacafe.png);
 }
 
 .cafe_avillage {
-  background-image: url(img/cafe/avilliage.png);
+  background-image: url(..img/cafe/avilliage.png);
 }
 .cafe_ora {
-  background-image: url(img/cafe/cafeora.png);
+  background-image: url(..img/cafe/cafeora.png);
 }
 
 .tour_container {
@@ -659,19 +659,19 @@ main {
 }
 
 .tour_centralpark {
-  background-image: url(img/tour/cetralpark.png);
+  background-image: url(..img/tour/cetralpark.png);
 }
 
 .tour_masianBeach {
-  background-image: url(img/tour/masian_beach.png);
+  background-image: url(..img/tour/masian_beach.png);
 }
 
 .tour_temple {
-  background-image: url(img/tour/temple.png);
+  background-image: url(..img/tour/temple.png);
 }
 
 .tour_market {
-  background-image: url(img/tour/market.png);
+  background-image: url(..img/tour/market.png);
 }
 
 @keyframes locationImg {
