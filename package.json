@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  },
+  "name": "introduce_incheon",
+  "description": "인천을 소개하는 웹사이트 사이드 프로젝트입니다.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0626na/introduce_incheon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/0626na/introduce_incheon/issues"
+  },
+  "homepage": "https://0626na.github.io/introduce_incheon"
+}
