@@ -659,11 +659,11 @@ main {
 }
 
 .tour_centralpark {
-  background-image: url(..img/tour/cetralpark.png);
+  background-image: url(../img/tour/cetralpark.png);
 }
 
 .tour_masianBeach {
-  background-image: url(..img/tour/masian_beach.png);
+  background-image: url(../img/tour/masian_beach.png);
 }
 
 .tour_temple {
